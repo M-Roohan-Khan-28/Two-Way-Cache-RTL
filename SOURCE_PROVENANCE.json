@@ -1,0 +1,19 @@
+{
+  "source_repository": "https://github.com/rouhan28may-droid/hdl-labs.git",
+  "source_commit": "df8d6f66898a08df75cd2071ddac7bbba9ba9b16",
+  "source_folder": "projects/two-way-cache",
+  "extraction": "Source snapshot, not a new implementation or new verification run.",
+  "source_sha256": {
+    "docs/verification_plan.md": "2796f468477789fdf840a5514842b43f423305ac3bece63be8e5aa5c4a3861ec",
+    "SOURCE_README.md": "eae1bb4f13fd966cc49f4ed28c6514be10f0f72a06a8e61381752406c24f4319",
+    "reports/compile.log": "c106c1976caf503baeb9898764f666be6f7955a830b18d460cfd3a465df99697",
+    "reports/README.md": "ccdaf75f775804c6ccfcc50403e848888714b37d8f3641542c80387479dd366f",
+    "reports/simulation.log": "d6afe2d417a1bbed6fb18d86745b430e34e55135edfb79763d5424cf2151812a",
+    "rtl/design.sv": "33215b4142925ab204a15174a7dbd10360dee3411b0f0eb7df1de04d7e102951",
+    "scripts/run_sim.ps1": "ab795b6645b6cd2af365a02c31b40a853355dbee23b80a30752a5ab9600e233a",
+    "sim/filelist.f": "5a9b0b8af8b3475ca84741fd64d0c78c990ba521d0323b7760a2284dfb048b8e",
+    "sim/run.sh": "2ed323d3679dcd097d450a82e12b642d932584ebc45506651ef3db68bed7d545",
+    "tb/tb_top.sv": "bfd99e4110ff960416e9926074869aace580a93cd5e176445f073c4b7320b93c",
+    "waves/README.md": "6d08b508a8afadffbd00b6cc401f977b87432d22ecda2064d6a2d3288999b944"
+  }
+}
