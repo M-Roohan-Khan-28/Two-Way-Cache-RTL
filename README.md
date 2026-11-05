@@ -1,14 +1,12 @@
-# Two-way set-associative cache controller
+# Two-Way Set-Associative Cache RTL
 
-**Verilog / SystemVerilog · RTL and verification exercise**
+**SystemVerilog · Four sets · Tag and data lookup**
 
-This standalone repository preserves the original `two-way-cache` exercise from my `hdl-labs` collection. Original RTL, testbench, simulator scripts and existing evidence are preserved byte-for-byte. This packaging step is not a new simulation or a claim of full protocol compliance.
+A compact two-way, four-set cache array with valid bits, 3-bit tags, and one 8-bit data item per entry. Writes explicitly select the destination way; reads compare both ways and return hit status and matching data.
 
-## Overview and original documentation
+The supplied implementation covers storage and lookup. It does not include an automatic replacement policy, a memory refill or writeback engine, or a cache-coherence mechanism.
 
-Document the actual cache geometry, replacement/write policy, hit/miss behaviour and existing tests; expand verification separately.
-
-See [the original exercise README](SOURCE_README.md) for its existing specification, source layout and tool instructions. The text above identifies review goals; it does not claim that new enhancements have already been implemented.
+See [original source documentation](SOURCE_README.md) for the baseline files and the verification-status section below for the retained directed-test evidence.
 
 ## Run
 
@@ -32,4 +30,4 @@ Source commit: `df8d6f66898a08df75cd2071ddac7bbba9ba9b16`. Source path: `project
 
 ## Next engineering work
 
-Review the specification and implementation, run the supplied tests, add independently justified checks, and record actual results and known limitations. Waveform screenshots can be added later; no fabricated screenshots or coverage figures are needed.
+Planned tests will exercise both ways in every set, tag conflicts, reset invalidation, and duplicate-tag priority. A refill or replacement controller would be a separately specified RTL enhancement.
