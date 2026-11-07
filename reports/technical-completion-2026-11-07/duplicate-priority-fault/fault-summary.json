@@ -1,0 +1,9 @@
+﻿{
+    "source_revision":  "73805b661e131c4f61b6258dc1abe99d0a12c3af",
+    "source_sha256":  "33215B4142925AB204A15174A7DBD10360DEE3411B0F0EB7DF1DE04D7E102951",
+    "mutant_sha256":  "9564779131176AE263F2CE200D77AD8D2F5D338E6B58D0A6636183AEA7C90F7C",
+    "mutation":  "Mask way-0 match when way 1 has the same tag",
+    "wrapper_exit_code":  1,
+    "legacy_pass":  true,
+    "contract_mismatch":  true
+}

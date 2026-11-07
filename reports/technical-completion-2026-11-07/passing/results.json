@@ -1,0 +1,62 @@
+{
+  "repository": "Two-Way-Cache-RTL",
+  "source_revision": "73805b661e131c4f61b6258dc1abe99d0a12c3af",
+  "source_dirty": false,
+  "sources": [
+    {
+      "path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\tc\\cache\\rtl\\design.sv",
+      "sha256": "33215b4142925ab204a15174a7dbd10360dee3411b0f0eb7df1de04d7e102951"
+    },
+    {
+      "path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\tc\\cache\\tb\\tb_top.sv",
+      "sha256": "bfd99e4110ff960416e9926074869aace580a93cd5e176445f073c4b7320b93c"
+    },
+    {
+      "path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\tc\\cache\\tb\\cache_contract_test.sv",
+      "sha256": "bc5c760ea76291b5a6d7db83f353327e1710d74799d6314fa7a29a2e4eb6151c"
+    }
+  ],
+  "seed": "0x28CACE17 (xorshift32 byte stimulus)",
+  "timeout_seconds_per_command": 120,
+  "simulations": [
+    {
+      "top": "tb_cache_2way",
+      "simulator_exit_code": 0,
+      "command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "tb_cache_2way",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "status": "PASS",
+      "checks": 7
+    },
+    {
+      "top": "cache_contract_test",
+      "simulator_exit_code": 0,
+      "command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "cache_contract_test",
+        "-do",
+        "vcd file cache-contract.vcd; vcd add /cache_contract_test/clk; vcd add /cache_contract_test/reset; vcd add /cache_contract_test/write; vcd add /cache_contract_test/way_select; vcd add /cache_contract_test/index; vcd add /cache_contract_test/tag; vcd add /cache_contract_test/data_in; vcd add /cache_contract_test/hit; vcd add /cache_contract_test/data_out; run -all; quit -code 0"
+      ],
+      "status": "PASS",
+      "checks": 1639,
+      "writes": 324,
+      "resets": 2
+    }
+  ],
+  "overall": "PASS",
+  "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+  "waveform": {
+    "path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\test-runs\\tc-cache-committed-2026-11-07\\cache-contract.vcd",
+    "sha256": "3019dc2502ed39fae2cfb19eb5947aa756d26ceffd955ae0c5c195f6124566d2"
+  },
+  "elapsed_seconds": 2.895
+}

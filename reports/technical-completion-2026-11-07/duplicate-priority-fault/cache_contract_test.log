@@ -1,0 +1,16 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit cache_contract_test -do "run -all; quit -code 0" 
+# Start time: 20:56:24 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.cache_contract_test
+# Loading work.cache_2way
+# run -all
+# ** Fatal: CACHE_MISMATCH post-write set=0 tag=7 expected_hit=1 observed_hit=1 expected_data=ee observed_data=0c
+#    Time: 877 ns  Scope: cache_contract_test.check_lookup File: C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/cache/tb/cache_contract_test.sv Line: 48
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/cache/tb/cache_contract_test.sv(48)
+#    Time: 877 ns  Iteration: 0  Instance: /cache_contract_test
+# End time: 20:56:24 on Nov 07,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
