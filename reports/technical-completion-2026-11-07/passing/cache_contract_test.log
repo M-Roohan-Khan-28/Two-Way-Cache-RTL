@@ -1,0 +1,25 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit cache_contract_test -do "vcd file cache-contract.vcd; vcd add /cache_contract_test/clk; vcd add /cache_contract_test/reset; vcd add /cache_contract_test/write; vcd add /cache_contract_test/way_select; vcd add /cache_contract_test/index; vcd add /cache_contract_test/tag; vcd add /cache_contract_test/data_in; vcd add /cache_contract_test/hit; vcd add /cache_contract_test/data_out; run -all; quit -code 0" 
+# Start time: 20:56:05 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.cache_contract_test
+# Loading work.cache_2way
+# vcd file cache-contract.vcd
+#  vcd add /cache_contract_test/clk
+#  vcd add /cache_contract_test/reset
+#  vcd add /cache_contract_test/write
+#  vcd add /cache_contract_test/way_select
+#  vcd add /cache_contract_test/index
+#  vcd add /cache_contract_test/tag
+#  vcd add /cache_contract_test/data_in
+#  vcd add /cache_contract_test/hit
+#  vcd add /cache_contract_test/data_out
+#  run -all
+# CACHE_CONTRACT_PASS checks=1639 writes=324 resets=2 seed=0x28CACE17
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/cache/tb/cache_contract_test.sv(124)
+#    Time: 4259 ns  Iteration: 0  Instance: /cache_contract_test
+# End time: 20:56:05 on Nov 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

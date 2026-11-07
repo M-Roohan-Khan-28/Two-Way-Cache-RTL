@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "origin": "simulator",
+  "source_filename": "cache-contract.vcd",
+  "source_sha256": "3019dc2502ed39fae2cfb19eb5947aa756d26ceffd955ae0c5c195f6124566d2",
+  "timescale": "1ps",
+  "start_tick": 4100000,
+  "end_tick": 4258000,
+  "source_final_tick": 4258000,
+  "signals": [
+    {
+      "name": "cache_contract_test.clk",
+      "code": "!",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_contract_test.reset",
+      "code": "\"",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_contract_test.write",
+      "code": "#",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_contract_test.way_select",
+      "code": "$",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_contract_test.index",
+      "code": "%",
+      "width": 2,
+      "kind": "reg",
+      "bit_range": "[1:0]"
+    },
+    {
+      "name": "cache_contract_test.tag",
+      "code": "&",
+      "width": 3,
+      "kind": "reg",
+      "bit_range": "[2:0]"
+    },
+    {
+      "name": "cache_contract_test.data_in",
+      "code": "'",
+      "width": 8,
+      "kind": "reg",
+      "bit_range": "[7:0]"
+    },
+    {
+      "name": "cache_contract_test.hit",
+      "code": "(",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_contract_test.data_out[7]",
+      "code": ")",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_contract_test.data_out[6]",
+      "code": "*",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_contract_test.data_out[5]",
+      "code": "+",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_contract_test.data_out[4]",
+      "code": ",",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_contract_test.data_out[3]",
+      "code": "-",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_contract_test.data_out[2]",
+      "code": ".",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_contract_test.data_out[1]",
+      "code": "/",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_contract_test.data_out[0]",
+      "code": "0",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    }
+  ],
+  "same_tick_collapses": 0,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER"
+}
