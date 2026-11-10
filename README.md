@@ -49,9 +49,9 @@ trace hash. These figures are measured samples; `tools/vcd_to_svg.py` does not
 assess functional correctness. [Verification plan](docs/verification_plan.md)
 maps the bounded contract to the checks.
 
-The installed Starter simulator passed basic SV/interfaces but did not execute
+The historical 7 November Starter probe passed basic SV/interfaces but did not execute
 the probed randomization, covergroups, SVA, or UVM flows; those advanced
-workstreams remain blocked or NOT RUN. The portable check count is not a
+workstreams were blocked or NOT RUN at that time. The portable check count is not a
 functional/code coverage percentage. Synthesis, timing, FPGA, and hardware
 were not run.
 
@@ -66,3 +66,11 @@ Source commit: `df8d6f66898a08df75cd2071ddac7bbba9ba9b16`. Source path: `project
 The next milestone is licensed advanced verification or target-specific
 implementation evidence. A refill or replacement controller remains a
 separately specified RTL enhancement.
+
+## Deterministic UVM/SVA review milestone
+
+A separate qualified Questa 2025.2/UVM 1.2 environment now has executed
+deterministic UVM/SVA evidence for this unchanged RTL. See the
+[adapter guide, exact locks, results and reproduction command](docs/DETERMINISTIC_CACHE_UVM.md).
+The earlier probe/report above remains historical. Coverage and randomization
+remain NOT RUN. This review milestone adds no cache-controller functionality.
