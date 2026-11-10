@@ -67,10 +67,17 @@ The next milestone is licensed advanced verification or target-specific
 implementation evidence. A refill or replacement controller remains a
 separately specified RTL enhancement.
 
-## Deterministic UVM/SVA review milestone
+## Deterministic UVM/SVA milestone - merged
 
-A separate qualified Questa 2025.2/UVM 1.2 environment now has executed
-deterministic UVM/SVA evidence for this unchanged RTL. See the
-[adapter guide, exact locks, results and reproduction command](docs/DETERMINISTIC_CACHE_UVM.md).
-The earlier probe/report above remains historical. Coverage and randomization
-remain NOT RUN. This review milestone adds no cache-controller functionality.
+The [adapter guide](docs/DETERMINISTIC_CACHE_UVM.md) links the
+[merged-source closeout](https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/blob/4496a567b852fb17c44b94ff8a23c1fccf9ffaa9/reports/cache-uvm-merged-2026-11-10/SUMMARY.md): **20/20 required PASS**, aggregate
+and actual outer wrapper exits 0, at AMBA merge `b9c35a85113c99715ede572ab1f5dd94574b23e6`.
+Both reviewed milestone PRs are merged. The RTL lock remains `b6246eff1380aa0fb7812de9fccaf12b849fa1ca`.
+Results: 27 runner fixtures; six negative and one legal SVA control; 79 scenarios,
+5,111 observations / 10,222 comparisons; 402 writes / two reset-blocked clocks;
+all nine fault parents; separate **7 legacy / 1,639 portable** gate.
+[Normal-clone reproduction](https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/blob/4496a567b852fb17c44b94ff8a23c1fccf9ffaa9/reports/cache-uvm-merged-2026-11-10/REPRODUCE.md) selects the actual tested merge.
+New merged-source measured waveforms have exact-byte provenance. Earlier reports
+and captures remain unchanged. Functional coverage, constrained randomization and
+original advanced ALU/APB remain **NOT RUN**. No replacement, refill, writeback,
+coherence or physical-implementation result is claimed.
